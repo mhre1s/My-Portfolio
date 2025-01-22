@@ -9,7 +9,22 @@ export default {
       },
       backgroundColors: {
         'gradient-to-r': 'linear-gradient(to right, #ff7e5f, #feb47b)'
-      }
+      },
+      keyframes:{
+        slideIn:{
+          '0%':{
+            transform: 'translateX(-100%)',
+            opacity: "1",
+          },
+          "100%": {
+            transform: 'translateX(0)',
+            opacity: "1"
+          },
+        },
+      },
+      animation: {
+        slideIn: 'slideIn 0.8s ease-out',
+      },
     },
   },
   plugins: [],
