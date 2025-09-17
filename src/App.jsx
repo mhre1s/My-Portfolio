@@ -45,7 +45,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-customPurple flex flex-col items-center">
-        <header className="flex justify-between py-7 px-8 w-full">
+        <header className="flex justify-between py-7 px-8 w-full bg-customPurple z-50 fixed">
           <h1 className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-3xl">
             Matheus
           </h1>
@@ -167,7 +167,8 @@ function App() {
             <div>
               <div
                 ref={sectionRef}
-                className={`custom-scroll group flex flex-col gap-8 items-center max-w-[800px] px-4 py-4 rounded-xl transform transition duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl ${
+                className={`custom-scroll group flex flex-col gap-8 items-center max-w-[800px] px-4 py-4 rounded-xl transform transition 
+                  duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl ${
                   isVisible ? "animate-slideIn" : ""
                 }`}
               >
@@ -178,12 +179,12 @@ function App() {
                   alt=""
                 />
                 <p className="text-white opacity-55">
-                  Aplicativo desenvolvido para poder cadastrar seus
-                  clientes e registrar atendimentos técnicos.
-                  Contém: Autenticação, paginação, dark theme, filtro de
-                  clientes e agendamentos de serviços.
-                <br />
-                <br />
+                  Aplicativo desenvolvido para poder cadastrar seus clientes e
+                  registrar atendimentos técnicos. Contém: Autenticação,
+                  paginação, dark theme, filtro de clientes e agendamentos de
+                  serviços.
+                  <br />
+                  <br />
                   Instruções de acesso estão no readme do github
                 </p>
                 <div className="flex justify-center w-full gap-10">
@@ -260,7 +261,7 @@ function App() {
                 </a>
               </p>
               <p className="flex items-center gap-1">
-                <FaWhatsapp/> Whatsapp:{" "}
+                <FaWhatsapp /> Whatsapp:{" "}
                 <a
                   href="https://wa.me/5519982069472"
                   target="_blank"
