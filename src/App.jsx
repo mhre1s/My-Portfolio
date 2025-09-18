@@ -112,7 +112,7 @@ function App() {
             >
               Tecnologias e habilidades
             </h2>
-            <div className="flex justify-between w-full flex-wrap">
+            <div className="flex justify-center gap-2 w-full flex-wrap">
               <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
                 <TfiHtml5 className="text-orange-500 w-20 h-auto" />
                 <p>Html</p>
