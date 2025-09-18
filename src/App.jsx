@@ -164,20 +164,18 @@ function App() {
             >
               Projetos
             </h2>
-            <div>
+            <div
+              ref={sectionRef}
+              className={`flex flex-col gap-5 transform transition duration-500 ${
+                isVisible ? "animate-slideIn" : ""
+              }`}
+            >
               <div
-                ref={sectionRef}
-                className={`custom-scroll group flex flex-col gap-8 items-center max-w-[800px] px-4 py-4 rounded-xl transform transition 
-                  duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl ${
-                  isVisible ? "animate-slideIn" : ""
-                }`}
+                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl transform transition 
+                  duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl`}
               >
                 <h3 className=" text-xl text-white">Client Manager App</h3>
-                <img
-                  className="rounded-xl w-[1000px]"
-                  src="/clients.png"
-                  alt=""
-                />
+                <img className="rounded-xl" src="/clients.png" alt="" />
                 <p className="text-white opacity-55">
                   Aplicativo desenvolvido para poder cadastrar seus clientes e
                   registrar atendimentos técnicos. Contém: Autenticação,
@@ -207,6 +205,55 @@ function App() {
                   </a>
                   <a
                     href="https://clientmanagerapp.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                      <FaLink />
+                      Ver demo
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div
+                ref={sectionRef}
+                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl transform transition 
+                  duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl ${
+                    isVisible ? "animate-slideIn" : ""
+                  }`}
+              >
+                <h3 className=" text-xl text-white">Your Finances</h3>
+                <img className="rounded-xl" src="/chart.png" alt="" />
+                <p className="text-white opacity-55">
+                  Sistema web desenvolvido para que o usuário possa salvar suas
+                  transações seja recebimentos ou despesas. O sistema exibe se o
+                  usuário gastou mais do que recebeu e vice-versa, exibe
+                  gráficos e cards para auxiliar na leitura dos gastos ou
+                  lucros.
+                  <br />
+                  <br />
+                  Instruções de acesso estão no readme do github
+                </p>
+                <div className="flex justify-center w-full gap-10">
+                  <TfiHtml5 className="text-orange-500 w-10 h-auto" />
+                  <SiCss3 className="text-blue-500 w-10 h-auto" />
+                  <SiTailwindcss className="text-cyan-500 w-10 h-auto" />
+                  <FaReact className="text-sky-600 w-10 h-auto" />
+                  <BiLogoFirebase className="text-yellow-500 w-10 h-auto" />
+                </div>
+                <div className="flex gap-20">
+                  <a
+                    href="https://github.com/mhre1s/Your-Finance-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                      <FaCode />
+                      Ver código
+                    </button>
+                  </a>
+                  <a
+                    href="https://yourfinancess.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -23,7 +23,7 @@ export default {
         },
       },
       animation: {
-        slideIn: 'slideIn 0.8s ease-out',
+        slideIn: 'slideIn 1.5s ease-in',
       },
     },
   },
