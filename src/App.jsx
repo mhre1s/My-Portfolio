@@ -45,7 +45,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-customPurple flex flex-col items-center">
-        <header className="flex justify-between py-7 px-8 w-full bg-customPurple z-50 fixed">
+        <header className="sm:flex justify-between py-7 px-8 w-full bg-customPurple z-50 fixed hidden">
           <h1 className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-3xl">
             Matheus
           </h1>
@@ -68,10 +68,10 @@ function App() {
           <div className="w-full max-w-[1280px] px-8 flex justify-between gap-10 mt-14">
             <div className="flex flex-col gap-10 w-full">
               <div
-                className="flex flex-col justify-center items-center gap-5"
+                className="flex flex-col justify-center items-center gap-5 mt-10"
                 id="about"
               >
-                <p className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-xl">
+                <p className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-xl text-center">
                   Bem-vindo ao meu portfólio
                 </p>
                 <p className="text-3xl text-white">Matheus Reis</p>
@@ -107,7 +107,7 @@ function App() {
         <section className="w-full flex justify-center">
           <div className="max-w-[1280px] w-full px-8 flex justify-center items-center flex-col mt-14">
             <h2
-              className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-3xl my-10"
+              className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-3xl my-10 text-center"
               id="techs"
             >
               Tecnologias e habilidades
@@ -276,7 +276,7 @@ function App() {
               Contatos
             </h3>
             <div className="flex flex-col gap-8 text-white mt-10 justify-start">
-              <p className="flex items-center gap-1">
+              <p className="flex items-center gap-1 flex-col sm:flex-row">
                 <AiOutlineMail /> Email:{" "}
                 <a
                   href="mailto:matheus201922@hotmail.com"
@@ -286,7 +286,7 @@ function App() {
                   matheus201922@hotmail.com
                 </a>
               </p>
-              <p className="flex items-center gap-1">
+              <p className="flex items-center gap-1 flex-col sm:flex-row">
                 <FaLinkedin /> LinkedIn:{" "}
                 <a
                   href="https://linkedin.com/in/matheus-reis3009"
@@ -296,7 +296,7 @@ function App() {
                   linkedin.com/in/matheus-reis3009
                 </a>
               </p>
-              <p className="flex items-center gap-1">
+              <p className="flex items-center gap-1 flex-col sm:flex-row">
                 <IoLogoGithub />
                 GitHub:{" "}
                 <a
@@ -307,7 +307,7 @@ function App() {
                   github.com/mhre1s
                 </a>
               </p>
-              <p className="flex items-center gap-1">
+              <p className="flex items-center gap-1 flex-col sm:flex-row">
                 <FaWhatsapp /> Whatsapp:{" "}
                 <a
                   href="https://wa.me/5519982069472"
