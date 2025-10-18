@@ -14,6 +14,7 @@ import { FaCode } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
+import CursorEffect from "./component/animationCursor";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,8 +45,9 @@ function App() {
 
   return (
     <>
+    <CursorEffect/>
       <div className="min-h-screen bg-customPurple flex flex-col items-center">
-        <header className="sm:flex justify-between py-7 px-8 w-full bg-customPurple z-50 fixed hidden">
+        <header className="sm:flex justify-between py-7 px-8 w-full bg-customPurple z-40 fixed hidden">
           <h1 className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-3xl">
             Matheus
           </h1>
