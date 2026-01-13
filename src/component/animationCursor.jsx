@@ -26,7 +26,8 @@ function CursorEffect() {
   return (
     <div
       ref={cursorRef}
-      className="pointer-events-none fixed top-0 left-0 z-50 w-2/6 h-4/6 rounded-full bg-gradient-to-r from-blue-900 to-cyan-900 opacity-30 blur-2xl mix-blend-difference transition-transform duration-75 ease-out"
+      className="pointer-events-none fixed top-0 left-0 z-50 w-2/6 h-4/6 rounded-full bg-gradient-to-r from-blue-900 to-cyan
+      ;-900 opacity-30 blur-2xl mix-blend-difference transition-transform duration-75 ease-out"
     />
   );
 }

@@ -45,7 +45,7 @@ function App() {
 
   return (
     <>
-    <CursorEffect/>
+      <CursorEffect />
       <div className="min-h-screen bg-customPurple flex flex-col items-center">
         <header className="sm:flex justify-between py-7 px-8 w-full bg-customPurple z-40 fixed hidden">
           <h1 className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-3xl">
@@ -79,10 +79,22 @@ function App() {
                 <p className="text-3xl text-white">Matheus Reis</p>
               </div>
               <p className="xl:text-2xl lg:text-lg text-white opacity-55">
-                Sou desenvolvedor frontend com experiência em React, Tailwind,
-                Javascript, Consumo de APIS, MySql, Git, Bootstrap. Crio
-                aplicações web responsivas, sempre priorizando o interesse do
-                usuário. Estudando desenvolvimento backend com NodeJs
+                Sou desenvolvedor full-stack com foco na criação de aplicações
+                web completas, desde a interface até o banco de dados. Tenho
+                experiência no desenvolvimento de frontends modernos e
+                responsivos utilizando React, Tailwind CSS, JavaScript e
+                Bootstrap, além de integração com APIs e consumo de dados. Já
+                desenvolvi sistemas completos, como aplicações de controle
+                financeiro e gestão de clientes, envolvendo autenticação, regras
+                de negócio, banco de dados e organização de código, utilizando
+                tecnologias como Node.js, MySQL, Firebase e Jest para testes.
+                <br />
+                <br />
+                Atualmente sigo aprofundando meus conhecimentos em backend,
+                especialmente em Node.js e arquitetura de APIs, buscando evoluir
+                continuamente para entregar soluções cada vez mais robustas,
+                eficientes e alinhadas às necessidades dos usuários.
+                <br />
                 <br />
                 Sou apaixonado por tecnologia e sempre busco me aprimorar, tanto
                 em novas tecnologias quanto nas que já conheço
