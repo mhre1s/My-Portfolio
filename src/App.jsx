@@ -237,7 +237,7 @@ function App() {
                   }`}
               >
                 <h3 className=" text-xl text-white">Your Finances</h3>
-                <img className="rounded-xl" src="/chart.png" alt="" />
+                <img className="rounded-xl" src="/chart1.png" alt="" />
                 <p className="text-white opacity-55">
                   Sistema web desenvolvido para que o usuário possa salvar suas
                   transações seja recebimentos ou despesas. O sistema exibe se o
