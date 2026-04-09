@@ -242,7 +242,7 @@ function App() {
                   <br />
                   Instruções de acesso estão no readme do github
                 </p>
-                <div className="flex justify-center w-full gap-10">
+                <div className="flex flex-wrap justify-center w-full gap-10">
                   <FaNodeJs className="text-emerald-500 w-10 h-auto" />
                   <SiSequelize className="text-blue-500 w-10 h-auto" />
                   <SiPostgresql className="text-sky-700 w-10 h-auto" />
@@ -257,7 +257,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                    <button className="px-2 py-2 gap-1 justify-center flex items-center flex-wrap bg-slate-300 rounded-xl duration-500 hover:brightness-125">
                       <FaCode />
                       Ver código
                     </button>
@@ -267,7 +267,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                    <button className="px-2 py-2 gap-1 justify-center flex items-center flex-wrap bg-slate-300 rounded-xl duration-500 hover:brightness-125">
                       <FaLink />
                       Ver demo
                     </button>
@@ -294,7 +294,7 @@ function App() {
                   <br />
                   Instruções de acesso estão no readme do github
                 </p>
-                <div className="flex justify-center w-full gap-10">
+                <div className="flex flex-wrap justify-center w-full gap-10">
                   <TfiHtml5 className="text-orange-500 w-10 h-auto" />
                   <SiCss3 className="text-blue-500 w-10 h-auto" />
                   <SiTailwindcss className="text-cyan-500 w-10 h-auto" />
@@ -307,7 +307,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                    <button className="px-2 py-2 justify-center flex items-center gap-1 flex-wrap bg-slate-300 rounded-xl duration-500 hover:brightness-125">
                       <FaCode />
                       Ver código
                     </button>
@@ -317,7 +317,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                    <button className="px-2 py-2 justify-center flex items-center gap-1 flex-wrap bg-slate-300 rounded-xl duration-500 hover:brightness-125">
                       <FaLink />
                       Ver demo
                     </button>
@@ -343,7 +343,7 @@ function App() {
                   <br />
                   Instruções de acesso estão no readme do github
                 </p>
-                <div className="flex justify-center w-full gap-10">
+                <div className="flex flex-wrap justify-center w-full gap-10">
                   <TfiHtml5 className="text-orange-500 w-10 h-auto" />
                   <SiCss3 className="text-blue-500 w-10 h-auto" />
                   <SiTailwindcss className="text-cyan-500 w-10 h-auto" />
@@ -356,7 +356,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                    <button className="px-2 py-2 justify-center flex items-center flex-wrap gap-1 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
                       <FaCode />
                       Ver código
                     </button>
@@ -366,7 +366,7 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                    <button className="px-2 py-2 justify-center flex items-center flex-wrap gap-1 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
                       <FaLink />
                       Ver demo
                     </button>
