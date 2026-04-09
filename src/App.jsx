@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import "./App.css";
-import { SiTailwindcss, SiCss3 } from "react-icons/si";
+import { SiTailwindcss, SiCss3, SiPostgresql } from "react-icons/si";
 import { TfiHtml5 } from "react-icons/tfi";
 import { RiJavascriptFill } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io5";
@@ -14,7 +14,14 @@ import { FaCode } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
-import CursorEffect from "./component/animationCursor";
+import { FaDocker } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiPostman } from "react-icons/si";
+import { SiJest } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { SiN8N } from "react-icons/si";
+import { SiSequelize } from "react-icons/si";
+
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +52,6 @@ function App() {
 
   return (
     <>
-      <CursorEffect />
       <div className="min-h-screen bg-customPurple flex flex-col items-center">
         <header className="sm:flex justify-between py-7 px-8 w-full bg-customPurple z-40 fixed hidden">
           <h1 className="text bg-gradient-to-r from-teal-500 to-blue-600 text-transparent bg-clip-text font-bold text-3xl">
@@ -79,40 +85,44 @@ function App() {
                 <p className="text-3xl text-white">Matheus Reis</p>
               </div>
               <p className="xl:text-2xl lg:text-lg text-white opacity-55">
-                Sou desenvolvedor full-stack com foco na criação de aplicações
-                web completas, desde a interface até o banco de dados. Tenho
-                experiência no desenvolvimento de frontends modernos e
-                responsivos utilizando React, Tailwind CSS, JavaScript e
-                Bootstrap, além de integração com APIs e consumo de dados. Já
-                desenvolvi sistemas completos, como aplicações de controle
-                financeiro e gestão de clientes, envolvendo autenticação, regras
-                de negócio, banco de dados e organização de código, utilizando
-                tecnologias como Node.js, MySQL, Firebase e Jest para testes.
+                Sou desenvolvedor focado em Backend, especializado no
+                ecossistema Node.js e na criação de APIs REST robustas e
+                escaláveis. Minha experiência central envolve a integração de
+                sistemas complexos (como ERPs), onde atuo garantindo a
+                integridade de dados entre bases locais e externas, utilizando
+                PostgreSQL e Sequelize. Além do domínio em arquitetura MVC e
+                segurança (JWT/bcrypt), utilizo Docker para containerização e
+                metodologias de AI-Assisted Development para acelerar a entrega
+                com alta qualidade de código.
                 <br />
                 <br />
-                Atualmente sigo aprofundando meus conhecimentos em backend,
-                especialmente em Node.js e arquitetura de APIs, buscando evoluir
-                continuamente para entregar soluções cada vez mais robustas,
-                eficientes e alinhadas às necessidades dos usuários.
+                Tenho experiência prática na implementação e gerenciamento de
+                bancos de dados na nuvem, garantindo alta disponibilidade e
+                performance. Para assegurar a confiabilidade e a
+                manutenibilidade das aplicações, aplico testes automatizados
+                utilizando Jest. Tenho também uma sólida base Fullstack com
+                React e Tailwind CSS, o que me permite transitar por toda a
+                stack para entregar soluções eficientes, desde o banco de dados
+                até a interface final
                 <br />
                 <br />
                 Sou apaixonado por tecnologia e sempre busco me aprimorar, tanto
                 em novas tecnologias quanto nas que já conheço
               </p>
-              <div className="flex justify-center gap-3 transform hover:scale-110 transition duration-300">
+              <div className="flex justify-center gap-3">
                 <a
                   href="https://www.linkedin.com/in/matheus-reis3009/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin className="text-white w-16 h-auto hover:text-sky-200 duration-300" />
+                  <FaLinkedin className="transform hover:scale-110 transition duration-300 text-white w-16 h-auto hover:text-sky-200" />
                 </a>
                 <a
                   href="https://github.com/mhre1s"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoLogoGithub className="text-white w-16 h-auto hover:text-sky-200 duration-300" />
+                  <IoLogoGithub className="text-white w-16 h-auto hover:text-sky-200 transform hover:scale-110 transition duration-300" />
                 </a>
               </div>
             </div>
@@ -128,17 +138,43 @@ function App() {
             </h2>
             <div className="flex justify-center gap-2 w-full flex-wrap">
               <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
-                <TfiHtml5 className="text-orange-500 w-20 h-auto" />
-                <p>Html</p>
+                <FaNodeJs className="text-emerald-500 w-20 h-auto" />
+                <p>NodeJs</p>
               </div>
+              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
+                <BiLogoPostgresql className="text-sky-700 w-20 h-auto" />
+                <p>PostgreSQL</p>
+              </div>
+              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
+                <SiSequelize className="text-blue-500 w-20 h-auto" />
+                <p>Sequelize</p>
+              </div>
+              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
+                <FaAws className="text-white w-20 h-auto" />
+                <p>AWS</p>
+              </div>
+              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
+                <FaDocker className="text-blue-500 w-20 h-auto" />
+                <p>Docker</p>
+              </div>
+              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
+                <SiJest className="text-red-400 w-20 h-auto" />
+                <p>Jest</p>
+              </div>
+              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
+                <SiN8N className="text-red-500 w-20 h-auto" />
+                <p>n8n</p>
+              </div>
+              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
+                <SiPostman className="bg-white text-orange-500 w-20 h-auto rounded-full" />
+                <p>Postman</p>
+              </div>
+
               <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
                 <SiTailwindcss className="text-cyan-500 w-20 h-auto" />
                 <p>Tailwind</p>
               </div>
-              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
-                <SiCss3 className="text-blue-500 w-20 h-auto" />
-                <p>Css</p>
-              </div>
+
               <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
                 <RiJavascriptFill className="text-yellow-500 w-20 h-auto" />
                 <p>Javascript</p>
@@ -163,10 +199,6 @@ function App() {
                 <BiLogoFirebase className="text-yellow-500 w-20 h-auto" />
                 <p>Firebase</p>
               </div>
-              <div className="text-center flex-col p-5 items-center justify-center rounded-xl text-customPurple hover:bg-slate-300 duration-200">
-                <FaNodeJs className="text-emerald-500 w-20 h-auto" />
-                <p>NodeJs</p>
-              </div>
             </div>
           </div>
         </section>
@@ -178,7 +210,7 @@ function App() {
             >
               Projetos
             </h2>
-            
+
             <div
               ref={sectionRef}
               className={`flex flex-col gap-5 transform transition duration-500 ${
@@ -186,30 +218,42 @@ function App() {
               }`}
             >
               <div
-                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl transform transition 
-                  duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl`}
+                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl  
+                  duration-300 hover:bg-[#1e1e2e] hover:shadow-xl`}
               >
-                <h3 className=" text-xl text-white">Client Manager App</h3>
+                <h3 className=" text-xl text-white">TrixStock</h3>
                 <img className="rounded-xl" src="/trixstockgif.gif" alt="" />
                 <p className="text-white opacity-55">
-                  Aplicativo desenvolvido para poder cadastrar seus clientes e
-                  registrar atendimentos técnicos. Contém: Autenticação,
-                  paginação, dark theme, filtro de clientes e agendamentos de
-                  serviços.
+                  O TrixStock é um sistema de controle de estoque e
+                  gerenciamento de equipamentos desenvolvido para otimizar o
+                  fluxo de entrada e saída de materiais. O diferencial técnico
+                  do projeto reside na sua arquitetura preparada para
+                  integração: o sistema gerencia IDs externos, permitindo que o
+                  estoque local esteja sempre em sincronia com plataformas de
+                  gestão externas.
+                  <br />
+                  <br />
+                  O projeto conta com um sistema de requisições, onde usuários
+                  podem solicitar itens e administradores podem aprovar ou
+                  rejeitar fluxos em tempo real. A interface foi construída com
+                  foco na usabilidade técnica, garantindo agilidade no registro
+                  de novos componentes e categorias.
                   <br />
                   <br />
                   Instruções de acesso estão no readme do github
                 </p>
                 <div className="flex justify-center w-full gap-10">
-                  <TfiHtml5 className="text-orange-500 w-10 h-auto" />
-                  <SiCss3 className="text-blue-500 w-10 h-auto" />
+                  <FaNodeJs className="text-emerald-500 w-10 h-auto" />
+                  <SiSequelize className="text-blue-500 w-10 h-auto" />
+                  <SiPostgresql className="text-sky-700 w-10 h-auto" />
+                  <SiJest className="text-red-400 w-10 h-auto" />
+                  <SiPostman className="text-orange-500 w-10 h-auto" />
                   <SiTailwindcss className="text-cyan-500 w-10 h-auto" />
                   <FaReact className="text-sky-600 w-10 h-auto" />
-                  <BiLogoFirebase className="text-yellow-500 w-10 h-auto" />
                 </div>
                 <div className="flex gap-20">
                   <a
-                    href="https://github.com/mhre1s/Client-Manager-App"
+                    href="https://github.com/mhre1s/trixStock"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -219,52 +263,7 @@ function App() {
                     </button>
                   </a>
                   <a
-                    href="https://clientmanagerapp.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
-                      <FaLink />
-                      Ver demo
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div
-                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl transform transition 
-                  duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl`}
-              >
-                <h3 className=" text-xl text-white">Client Manager App</h3>
-                <img className="rounded-xl" src="/clients.png" alt="" />
-                <p className="text-white opacity-55">
-                  Aplicativo desenvolvido para poder cadastrar seus clientes e
-                  registrar atendimentos técnicos. Contém: Autenticação,
-                  paginação, dark theme, filtro de clientes e agendamentos de
-                  serviços.
-                  <br />
-                  <br />
-                  Instruções de acesso estão no readme do github
-                </p>
-                <div className="flex justify-center w-full gap-10">
-                  <TfiHtml5 className="text-orange-500 w-10 h-auto" />
-                  <SiCss3 className="text-blue-500 w-10 h-auto" />
-                  <SiTailwindcss className="text-cyan-500 w-10 h-auto" />
-                  <FaReact className="text-sky-600 w-10 h-auto" />
-                  <BiLogoFirebase className="text-yellow-500 w-10 h-auto" />
-                </div>
-                <div className="flex gap-20">
-                  <a
-                    href="https://github.com/mhre1s/Client-Manager-App"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
-                      <FaCode />
-                      Ver código
-                    </button>
-                  </a>
-                  <a
-                    href="https://clientmanagerapp.netlify.app/"
+                    href="https://trix-stock.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -277,19 +276,20 @@ function App() {
               </div>
               <div
                 ref={sectionRef}
-                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl transform transition 
-                  duration-300 hover:bg-[#1e1e2e] hover:scale-105 hover:shadow-xl ${
+                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl 
+                  duration-300 hover:bg-[#1e1e2e] hover:shadow-xl ${
                     isVisible ? "animate-slideIn" : ""
                   }`}
               >
                 <h3 className=" text-xl text-white">Your Finances</h3>
-                <img className="rounded-xl" src="/chart1.png" alt="" />
+                <img className="rounded-xl" src="/yourfinances.gif" alt="" />
                 <p className="text-white opacity-55">
-                  Sistema web desenvolvido para que o usuário possa salvar suas
-                  transações seja recebimentos ou despesas. O sistema exibe se o
-                  usuário gastou mais do que recebeu e vice-versa, exibe
-                  gráficos e cards para auxiliar na leitura dos gastos ou
-                  lucros.
+                  Solução web focada em inteligência financeira simplificada.
+                  Desenvolvida para organizar o fluxo de caixa do usuário, a
+                  aplicação automatiza o cálculo de saldo e oferece uma análise
+                  visual intuitiva via cards de resumo e gráficos de
+                  performance, permitindo uma tomada de decisão mais rápida
+                  sobre o controle de gastos.
                   <br />
                   <br />
                   Instruções de acesso estão no readme do github
@@ -314,6 +314,55 @@ function App() {
                   </a>
                   <a
                     href="https://yourfinancess.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                      <FaLink />
+                      Ver demo
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div
+                className={`custom-scroll group flex flex-col gap-8 items-center w-full px-4 py-4 rounded-xl  
+                  duration-300 hover:bg-[#1e1e2e] hover:shadow-xl`}
+              >
+                <h3 className=" text-xl text-white">Client Manager App</h3>
+                <img
+                  className="rounded-xl"
+                  src="/clientmanagerapp.gif"
+                  alt=""
+                />
+                <p className="text-white opacity-55">
+                  Aplicativo desenvolvido para poder cadastrar seus clientes e
+                  registrar atendimentos técnicos. Contém: Autenticação,
+                  paginação, dark theme, filtro de clientes e agendamentos de
+                  serviços.
+                  <br />
+                  <br />
+                  Instruções de acesso estão no readme do github
+                </p>
+                <div className="flex justify-center w-full gap-10">
+                  <TfiHtml5 className="text-orange-500 w-10 h-auto" />
+                  <SiCss3 className="text-blue-500 w-10 h-auto" />
+                  <SiTailwindcss className="text-cyan-500 w-10 h-auto" />
+                  <FaReact className="text-sky-600 w-10 h-auto" />
+                  <BiLogoFirebase className="text-yellow-500 w-10 h-auto" />
+                </div>
+                <div className="flex gap-20">
+                  <a
+                    href="https://github.com/mhre1s/Client-Manager-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-2 py-2 flex items-center gap-2 bg-slate-300 rounded-xl duration-500 hover:brightness-125">
+                      <FaCode />
+                      Ver código
+                    </button>
+                  </a>
+                  <a
+                    href="https://clientmanagerapp.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
