@@ -165,7 +165,7 @@ function App() {
             {/* Project 1 */}
             <div className="group flex flex-col rounded-3xl glass-card overflow-hidden hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_0_40px_rgba(20,184,166,0.15)] xl:col-span-2 relative">
               <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="flex flex-col lg:flex-row relative z-10">
+              <div className="flex flex-col-reverse lg:flex-row relative z-10">
                 <div className="lg:w-1/2 p-6 lg:p-10 flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-4 font-outfit">TrixStock</h3>
