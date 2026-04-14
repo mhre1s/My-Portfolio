@@ -87,7 +87,7 @@ function App() {
                 Sou desenvolvedor focado em Backend, especializado no ecossistema Node.js e na criação de APIs REST robustas e escaláveis. Minha experiência central envolve a integração de sistemas complexos (como ERPs), onde atuo garantindo a integridade de dados entre bases locais e externas, utilizando PostgreSQL e Sequelize.
               </p>
               <p>
-                Além do domínio em arquitetura MVC e segurança (JWT/bcrypt), utilizo Docker para containerização e metodologias de AI-Assisted Development para acelerar a entrega com alta qualidade de código. Tenho experiência prática na implementação e gerenciamento de bancos de dados na nuvem, garantindo alta disponibilidade e performance. 
+                Além do domínio em arquitetura MVC e segurança (JWT/bcrypt), utilizo Docker para containerização e metodologias de AI-Assisted Development para acelerar a entrega com alta qualidade de código. Possuo experiência prática com serviços em nuvem (AWS) e na implementação de pipelines de CI/CD, garantindo alta disponibilidade, performance e deploys automatizados.
               </p>
               <p>
                 Para assegurar a confiabilidade e a manutenibilidade das aplicações, aplico testes automatizados utilizando Jest. Tenho também uma sólida base Fullstack com React e Tailwind CSS, o que me permite transitar por toda a stack para entregar soluções eficientes, desde o banco de dados até a interface final.
@@ -180,6 +180,8 @@ function App() {
                       <FaNodeJs className="text-emerald-500 w-7 h-7" title="Node.js" />
                       <SiSequelize className="text-blue-500 w-7 h-7" title="Sequelize" />
                       <SiPostgresql className="text-sky-500 w-7 h-7" title="PostgreSQL" />
+                      <FaDocker className="text-blue-400 w-7 h-7" title="Docker" />
+                      <FaAws className="text-amber-500 w-7 h-7" title="AWS" />
                       <SiJest className="text-red-400 w-7 h-7" title="Jest" />
                       <SiPostman className="text-orange-500 w-7 h-7" title="Postman" />
                       <SiTailwindcss className="text-cyan-400 w-7 h-7" title="Tailwindcss" />
