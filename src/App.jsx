@@ -112,7 +112,7 @@ function App() {
         { name: "Docker", icon: FaDocker, color: "text-blue-400" },
         { name: "Linux / Ubuntu", icon: FaLinux, color: "text-amber-400" },
         { name: "Nginx", icon: SiNginx, color: "text-emerald-400" },
-        { name: "CI/CD Actions", icon: SiGithubactions, color: "text-sky-400" },
+        { name: "GitHub Actions", icon: SiGithubactions, color: "text-sky-400" },
         { name: "AWS (EC2, S3)", icon: FaAws, color: "text-amber-500" },
         { name: "Git & GitHub", icon: IoLogoGithub, color: "text-slate-200" },
       ],
