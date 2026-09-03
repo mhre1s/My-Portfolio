@@ -281,16 +281,16 @@ function App() {
                 Matheus Reis
               </h1>
               <p className="text-xl sm:text-2xl lg:text-3xl text-teal-400 font-outfit font-semibold text-center sm:text-left tracking-tight">
-                Desenvolvedor Backend & Engenheiro de Software
+                Desenvolvedor Full Stack & Engenheiro de Software
               </p>
             </div>
 
             <div className="text-lg text-slate-400 leading-relaxed space-y-6">
               <p>
-                Sou desenvolvedor de software com sólida atuação em <span className="text-slate-200 font-semibold">Backend, Arquitetura de APIs e Engenharia de Aplicações</span>, tendo como ecossistema central <span className="text-slate-200 font-semibold">Node.js (TypeScript, Express.js, Sequelize ORM e PostgreSQL)</span> na construção de microsserviços, modelagem relacional avançada e APIs REST escaláveis.
+                Sou desenvolvedor de software com sólida atuação em <span className="text-slate-200 font-semibold">desenvolvimento Full Stack, arquitetura de APIs e engenharia de sistemas</span>. No backend, domino tanto o ecossistema <span className="text-slate-200 font-semibold">Node.js (TypeScript, Express.js)</span> quanto <span className="text-slate-200 font-semibold">Python (FastAPI, Pandas)</span> para a construção de microsserviços escaláveis, APIs RESTful e processamento analítico de alta performance, integrados a interfaces modernas e reativas em <span className="text-slate-200 font-semibold">React</span>.
               </p>
               <p>
-                Possuo também comprovada experiência com <span className="text-slate-200 font-semibold">Python (FastAPI, Pandas)</span> na concepção e sustentação de plataformas analíticas corporativas (BI) em produção, integrando bases de dados híbridas (<span className="text-slate-200 font-medium">PostgreSQL e MySQL / ERPs legados</span>) com processamento vetorial em lote e cache em memória (TTL) para consultas analíticas sub-segundo.
+                Possuo experiência comprovada na concepção de ponta a ponta e sustentação de plataformas analíticas corporativas (BI) em produção, integrando bases de dados híbridas (<span className="text-slate-200 font-medium">PostgreSQL e MySQL / ERPs legados</span>) com processamento vetorial em lote e cache em memória (TTL) para consultas analíticas sub-segundo.
               </p>
               <p>
                 Tenho como diferencial prático a <span className="text-teal-400 font-semibold">cultura DevOps</span>: aplico conteinerização e orquestração com <span className="text-slate-200 font-medium">Docker e Docker Swarm</span>, servidores <span className="text-slate-200 font-medium">Linux (Ubuntu/Debian, Systemd)</span> com <span className="text-slate-200 font-medium">Nginx como proxy reverso</span> e esteiras automatizadas de <span className="text-slate-200 font-medium">CI/CD no GitHub Actions</span>, unindo com eficácia o ciclo de desenvolvimento de software à infraestrutura em nuvem (<span className="text-slate-200 font-medium">AWS</span>), com foco em deploy contínuo e segurança (JWT/RBAC).
@@ -883,7 +883,7 @@ function App() {
 
       <footer className="w-full py-10 border-t border-slate-800/80 bg-slate-950/80 relative z-10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Matheus Reis • Desenvolvedor Backend & Engenharia de Software</p>
+          <p>© {new Date().getFullYear()} Matheus Reis • Desenvolvedor Full Stack & Engenharia de Software</p>
           <div className="flex items-center gap-6">
             <a href="https://github.com/mhre1s" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/matheus-reis3009/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">LinkedIn</a>
